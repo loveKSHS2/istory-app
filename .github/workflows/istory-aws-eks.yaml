@@ -104,7 +104,7 @@ jobs:
       - name: 10.서비스 리포지토리 체크아웃
         uses: actions/checkout@v4
         with:
-          repository: seunghyun2060/istory-service   # 바꾸기
+          repository: loveKSHS2/istory-service   # 바꾸기
           ref: main # 바꾸기
           path: .
           token: ${{ secrets.PAT }} 
