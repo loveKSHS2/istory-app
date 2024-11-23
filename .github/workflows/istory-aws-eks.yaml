@@ -104,7 +104,7 @@ jobs:
       - name: 10.서비스 리포지토리 체크아웃
         uses: actions/checkout@v4
         with:
-          repository: dangtong-s-inc/istory-service   # 바꾸기
+          repository: seunghyun2060/istory-service   # 바꾸기
           ref: main # 바꾸기
           path: .
           token: ${{ secrets.PAT }} 
@@ -128,6 +128,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/dangtong-s-inc/istory-service.git # 바꾸기 
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/seunghyun2060/istory-service.git # 바꾸기 
           
           git push origin main
